@@ -1,10 +1,16 @@
 # jsAnimationController
+
 [![GitHub license](https://img.shields.io/npm/l/jsAnimationController?style=flat-square)](https://github.com/docravendark/jsAnimationController/blob/master/LICENSE)
+
 ![Node Version](https://img.shields.io/npm/v/jsAnimationController?style=flat-square)
+
 a lib for controlling timebased animationeffects
 ## Demo
+
 [simple demo](https://github.com/docravendark/jsAnimationController/blob/master/examples/simpleTest.html) 
+
 ![complex script demo](/doc/complexSample.gif)
+
 [complex script demo](https://github.com/docravendark/jsAnimationController/blob/master/examples/complexMovement.html) 
 
 ## Table of Contents
@@ -59,7 +65,7 @@ this project introduce some own datatypes
 ```js
 let myAnimationController = new symolo.jsAnimation();
 ```
-###methodes
+### Methodes
 |Name    | Description 
 |-       | - 
 |add     | adds an effectblock to the animation 
@@ -92,7 +98,7 @@ runs the animation
 | -------------- | --------------- |  -------------------------------------------------------- |
 | `elapsed`     | Number  | elapsedtime in ticks (optional) |
 
-### effects
+### Effects
 ```js
 new symolo.effects.moveEffect({ X:500, Y: 500 })
 ```
