@@ -4,7 +4,8 @@
   "description": "a lib for controlling timebased animationeffects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/docravendark/jsAnimationController/issues"
   },
-  "homepage": "https://github.com/docravendark/jsAnimationController#readme"
+  "homepage": "https://github.com/docravendark/jsAnimationController#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "source-map-loader": "^1.0.1",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {}
 }

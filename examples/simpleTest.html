@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simpleTest</title>
+  <style>
+    .boxToMove {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 10px;
+      width: 10px;
+      background-color: blue;
+    }
+
+    .boxToMove.green{
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="startAnimationController()">Start</button>
+
+  <div id='frst_boxToMove_id' class='boxToMove'></div>
+  <div id='scnd_boxToMove_id' class='boxToMove green'></div>
+
+  <script src="../dist/jsAnimationController.js"></script>
+
+  <script>
+
+    let myAnimationController = new symolo.jsAnimation();
+
+    function init() {      
+      let myBox = myAnimationController.registerSceneObject(document.getElementById("frst_boxToMove_id"));
+      let myBox2 = myAnimationController.registerSceneObject(document.getElementById("scnd_boxToMove_id"));
+      myAnimationController.add(myBox, 0, 1000, new symolo.effects.moveEffect({ X:500, Y: 500 }));
+      myAnimationController.add(myBox, 1200, 1000, new symolo.effects.moveEffect({ X: 10 }));
+
+      myAnimationController.add(myBox2, 500, 1200, new symolo.effects.moveEffect({ X: 100 }));
+
+      myAnimationController.add(myBox, 2400, 1000, new symolo.effects.moveEffect({ X: 250 }));
+      myAnimationController.Start();  
+    }
+
+    function startAnimationController(){
+      myAnimationController.Restart();  
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      myAnimationController.Animate();
+    }
+
+    init();
+    animate();
+
+  </script>
+
+</body>
+
+</html>
