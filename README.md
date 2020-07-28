@@ -60,13 +60,13 @@ this project introduce some own datatypes
 let myAnimationController = new symolo.jsAnimation();
 ```
 ###methodes
-Name    | Description 
--       | - 
-add     | adds an effectblock to the animation 
-Start   | start the animation 
-Stop    | stop the animation   
-Restart | reset the animation 
-Animate | runs the animation  
+|Name    | Description 
+|-       | - 
+|add     | adds an effectblock to the animation 
+|Start   | start the animation 
+|Stop    | stop the animation   
+|Restart | reset the animation 
+|Animate | runs the animation  
 
 #### `myAnimationController.add(objToSet,startTick,duration,effect)`
 this function all to add an effectblock
