@@ -6,9 +6,13 @@ a lib for controlling timebased animationeffects
 
 ## Demo
 
- [simple demo](https://github.com/docravendark/jsAnimationController/blob/master/examples/simpleTest.html) 
 
- [complex script demo](https://github.com/docravendark/jsAnimationController/blob/master/examples/complexMovement.html) 
+
+[simple demo](https://github.com/docravendark/jsAnimationController/blob/master/examples/simpleTest.html) 
+
+![complex script demo](https://github.com/docravendark/jsAnimationController/blob/master/doc/complexSample.gif)
+
+[complex script demo](https://github.com/docravendark/jsAnimationController/blob/master/examples/complexMovement.html) 
 
 ## HowTo
 
