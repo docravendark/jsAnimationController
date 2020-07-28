@@ -66,7 +66,7 @@ add     | adds an effectblock to the animation
 Start   | start the animation 
 Stop    | stop the animation   
 Restart | reset the animation 
-Animate | runs the animation  | elapsedtime in ticks (optional)
+Animate | runs the animation  
 
 #### `myAnimationController.add(objToSet,startTick,duration,effect)`
 this function all to add an effectblock
